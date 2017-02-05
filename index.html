@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Exia Console</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/1.7.2/socket.io.js"></script>
+	<script src="https://code.jquery.com/jquery-3.1.1.js" integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA=" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="css/index.css" type="text/css"></link>
+	<script src="js/index.js"></script>
+</head>
+
+<body>
+	<header>
+		<div class="navbar navbar-default navbar-fixed-top">
+			<div class="container">
+				<div class="navbar-header">
+					<h1>
+						Exia Console
+					</h1>
+				</div>
+				<div class="navbar-collapse collapse" id="navbar-main">
+					<a href="javascript:toggleConnection();" id="connection" class="disconnect">
+						<h2>切断中</h2>
+					</a>
+				</div>
+			</div>
+		</div>
+	</header>
+	<div id="container">
+		<div id="sensor" class="jumbotron special">
+			<div class="honoka"></div>
+			<div id="exia">
+				<img id="target" src="img/exia.png">
+				<div id="ls2"></div>
+				<div id="rs2"></div>
+				<div id="ls1"></div>
+				<div id="rs1"></div>
+				<div id="lf1"></div>
+				<div id="rf1"></div>
+				<div id="gyro"></div>
+				<div id="battery"></div>
+				<textarea id="console"></textarea>
+			</div>
+		</div>
+	</div>
+</body>
+
+</html>
