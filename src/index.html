@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<title>Console</title>
+	<link rel="stylesheet" href="css/index.css" type="text/css"></link>
+	<link rel="stylesheet" href="modules/bootstrap/dist/css/bootstrap.min.css" />
+	<link rel="stylesheet" href="modules/highcharts/css/highcharts.css" />
+	<script src="modules/socket.io-client/dist/socket.io.js"></script>
+</head>
+
+<body>
+	<nav class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0">
+		<a class="navbar-brand col-sm-3 col-md-2 mr-0" href="#">Console</a>
+		<ul class="navbar-nav px-3">
+			<li class="nav-item text-nowrap">
+				<a id="connection" class="nav-link" href="#">DISCONNECT</a>
+			</li>
+		</ul>
+	</nav>
+
+	<div class="container-fluid">
+		<div class="row">
+			<nav class="col-md-3 mysidebar">
+				<div id="img">
+					<img class="img" src="img/cp2.jpg" />
+					<inpu></inpu>
+				</div>
+			</nav>
+
+			<main role="main" class="col-md-9 ml-sm-auto">
+				<div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pb-2 mb-3 border-bottom">
+					<h1 class="h2">Chart</h1>
+					<div class="btn-toolbar mb-2 mb-md-0">
+						<div class="btn-group mr-2">
+							<button name="Left90" class="btn btn-primary except">led90</button>
+							<button name="Left" class="btn btn-primary except">Left</button>
+							<button name="Front" class="btn btn-primary except">Front</button>
+							<button name="Right" class="btn btn-primary except">Right</button>
+							<button name="Right90" class="btn btn-primary except">Right90</button>
+							<button name="gyro" class="btn btn-primary except">gyro</button>
+							<button name="battery" class="btn btn-primary except">battery</button>
+						</div>
+					</div>
+				</div>
+
+				<div class="row">
+					<div id="myChart2" class="col-md-12 ml-sm-auto"></div>
+				</div>
+
+				<div class="row">
+					<div id="myChart1" class="col-md-6 ml-sm-auto"></div>
+					<div id="myChart3" class="col-md-6 ml-sm-auto"></div>
+				</div>
+
+			</main>
+		</div>
+	</div>
+
+	<script src="modules/jquery/dist/jquery.slim.min.js"></script>
+	<script src="modules/popper.js/dist/umd/popper.min.js"></script>
+	<script src="modules/bootstrap/dist/js/bootstrap.min.js"></script>
+	<script src="modules/highcharts/js/highcharts.js"></script>
+	<script src="config/config.js"></script>
+	<script src="js/index.js"></script>
+	<script src="js/chart.js"></script>
+	<script src="js/superimposed.js"></script>
+
+</body>
+
+</html>

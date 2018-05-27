@@ -1,15 +1,24 @@
 {
-  "name": "alliedforce",
+  "name": "ssc",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "server": "node server.js",
+    "watch": "node server.js watch"
   },
   "author": "Naophis",
   "license": "MIT",
   "dependencies": {
-    "serialport": "^4.0.7",
-    "socket.io": "^1.7.2"
+    "bootstrap": "^4.1.1",
+    "chart.js": "^2.7.2",
+    "express": "^4.16.3",
+    "express-dev-autoreload": "^1.0.3",
+    "highcharts": "^6.1.0",
+    "jquery": "^3.3.1",
+    "popper.js": "^1.14.3",
+    "serialport": "^6.2.0",
+    "socket.io": "^2.1.0",
+    "socket.io-client": "^2.1.1"
   }
 }

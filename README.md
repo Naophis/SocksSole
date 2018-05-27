@@ -1,4 +1,4 @@
-# SocketI/O Serial Console
+# SocksSole (socket.io + Serial Console)
 
 従来、シリアル通信の送受信には、テキストだけしか表示できなかったり、グラフ化の際にはデータ加工の手間がある。  
 UIをブラウザのHTMLが利用できるため、個人の好みでGUIを作ることができる
