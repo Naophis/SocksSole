@@ -1,5 +1,5 @@
 class ConsoleSuperimposed {
-    constructor(params) {;
+    constructor(params) {
         this.id = params.targetId;
         this.dom = document.getElementById(params.targetId);
         this.prop = params.data;

@@ -76,6 +76,7 @@ let ready = function () {
             }
         });
         parser.on('data', function (data) {
+            // console.log(data)
             if (globalScoket) {
                 globalScoket.emit('message', {
                     message: data

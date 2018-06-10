@@ -60,18 +60,18 @@ $(document).ready(function () {
             var d = JSON.parse(data.message);
             if (d.gyro) {
                 chartList[0].append("gyro", d.gyro);
-                chartList[1].append("Right", d.RS1);
-                chartList[1].append("Left", d.LS1);
-                chartList[1].append("Right90", d.RS2);
-                chartList[1].append("Left90", d.LS2);
-                chartList[1].append("Front", d.RF1);
+                chartList[1].append("Right", d.right);
+                chartList[1].append("Left", d.left);
+                chartList[1].append("Right90", d.right90);
+                chartList[1].append("Left90", d.left90);
+                chartList[1].append("Front", d.front);
                 chartList[2].append("battery", d.battery);
                 img.update({
-                    right: d.RS1,
-                    left: d.LS1,
-                    front: d.RF1,
-                    right90: d.RS2,
-                    left90: d.LS2,
+                    right: d.right,
+                    left: d.left,
+                    front: d.front,
+                    right90: d.right90,
+                    left90: d.left90,
                     gyro: d.gyro,
                     battery: d.battery
                 });
